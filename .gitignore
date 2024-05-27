@@ -47,3 +47,6 @@ __history/**
 Tests/Delphi.Mocks.Tests.res
 Tests/Delphi.Mocks.Tests.res
 *.rsm
+
+.yarn
+*.cjs
