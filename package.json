@@ -4,5 +4,6 @@
   "main": "index.js",
   "repository": "https://github.com/solussaude/Delphi-Mocks.git",
   "license": "MIT",
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.2.2",
+  "private": true
 }
