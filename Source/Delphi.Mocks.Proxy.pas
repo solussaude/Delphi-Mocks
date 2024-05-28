@@ -139,7 +139,7 @@ type
 
     function Expect : IExpect<T>;
 
-    {$Message 'TODO: Implement ISetup.Before and ISetup.After.'}
+    //TODO: Implement ISetup.Before and ISetup.After.
     function WillReturn(const value : TValue) : IWhen<T>; overload;
     function WillReturn(const value : TValue; const AllowNil: Boolean) : IWhen<T>; overload;
     procedure WillReturnDefault(const AMethodName : string; const value : TValue);
@@ -584,7 +584,7 @@ begin
   methodName := LowerCase(AMethodName);
   if FMethodData.TryGetValue(methodName, Result) then
     exit;
-  
+
   setupParams := TSetupMethodDataParameters.Create(FIsStubOnly, FBehaviorMustBeDefined, FAllowRedefineBehaviorDefinitions);
   Result := TMethodData.Create(ATypeName, AMethodName, setupParams, FAutoMocker);
   FMethodData.Add(methodName, Result);
@@ -615,7 +615,7 @@ begin
         Exit;
     end;
 
-    { $Message 'TODO: Need to query the parent, but exclude ourselves and any other children which have already been called.'}
+    //TODO: Need to query the parent, but exclude ourselves and any other children which have already been called.
 
     //Call the parent.
     if FParentProxy <> nil then
